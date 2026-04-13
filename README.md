@@ -1,75 +1,62 @@
-# Assignment 2 – Data Structures
+# Assignment 2
 
-## 📌 Description
-This project implements several fundamental data structures in Java without using built-in Java collections (except Iterator).
+## Description
+In this project I implemented basic data structures in Java without using standard Java collections.
 
-The following structures are implemented from scratch:
+Implemented structures:
 - MyArrayList (dynamic array)
 - MyLinkedList (doubly linked list)
-- MyStack (LIFO structure)
-- MyQueue (FIFO structure)
-- MyMinHeap (binary heap)
+- MyStack
+- MyQueue
+- MyMinHeap
 
 ---
 
-## ⚙️ Technologies
-- Java
-- IntelliJ IDEA
+## Structure of project
+- MyList.java – interface
+- MyArrayList.java – array implementation
+- MyLinkedList.java – linked list implementation
+- MyStack.java – stack (LIFO)
+- MyQueue.java – queue (FIFO)
+- MyMinHeap.java – min heap
+- Main.java – testing all structures
 
 ---
 
-## 📂 Project Structure
-- `MyList.java` – interface with all required methods
-- `MyArrayList.java` – array-based implementation
-- `MyLinkedList.java` – doubly linked list implementation
-- `MyStack.java` – stack implementation
-- `MyQueue.java` – queue implementation
-- `MyMinHeap.java` – min heap implementation
-- `Main.java` – testing all data structures
+## How to run
+Open project in IntelliJ IDEA and run Main.java.
+
+All results will be printed in console.
 
 ---
 
-## 🚀 How to Run
+## Features
 
-1. Open the project in IntelliJ IDEA
-2. Run `Main.java`
-3. The console will display results of all tests
+MyArrayList:
+- dynamic resizing
+- access by index
+- supports sorting
 
----
+MyLinkedList:
+- uses nodes with next and prev
+- faster insert/remove in some cases
 
-## 📊 Features
+MyStack:
+- last in first out logic
 
-### MyArrayList
-- Dynamic resizing
-- Index-based access
-- Sorting support
+MyQueue:
+- first in first out logic
 
-### MyLinkedList
-- Doubly linked structure
-- Efficient insert/remove
-
-### MyStack
-- LIFO (Last In First Out)
-
-### MyQueue
-- FIFO (First In First Out)
-
-### MyMinHeap
-- Maintains minimum element at root
-- Supports insert and extractMin
+MyMinHeap:
+- smallest element always on top
+- supports insert and extract
 
 ---
 
-## 🧪 Testing
-All data structures are tested in `Main.java`.
+## Notes
+Java collections (like ArrayList or LinkedList) were not used, only basic arrays and custom logic.
 
 ---
 
-## ❗ Restrictions
-- No usage of Java Collections Framework (`ArrayList`, `LinkedList`, etc.)
-- Only `Iterator` is used as allowed
-
----
-
-## 👤 Author
+## Author
 Miras Adilbayev
